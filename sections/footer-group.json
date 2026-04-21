@@ -100,6 +100,7 @@
         "menu_xJa7q7": {
           "type": "menu",
           "name": "t:names.menu",
+          "disabled": true,
           "settings": {
             "menu": "",
             "heading": "Customer care",
@@ -121,6 +122,7 @@
         "menu_f9RViT": {
           "type": "menu",
           "name": "t:names.menu",
+          "disabled": true,
           "settings": {
             "menu": "",
             "heading": "About us",
@@ -142,6 +144,7 @@
         "menu_LhkDcq": {
           "type": "menu",
           "name": "t:names.menu",
+          "disabled": true,
           "settings": {
             "menu": "",
             "heading": "Connect",
@@ -180,6 +183,7 @@
       "blocks": {
         "copyright": {
           "type": "footer-copyright",
+          "disabled": true,
           "settings": {
             "show_powered_by": true,
             "font_size": "0.75rem",
@@ -200,11 +204,11 @@
           "type": "social-links",
           "name": "t:names.social_media_links",
           "settings": {
-            "facebook_url": "https://www.facebook.com/",
-            "instagram_url": "https://www.instagram.com/",
-            "youtube_url": "https://www.youtube.com/",
-            "tiktok_url": "https://www.tiktok.com/",
-            "twitter_url": "https://x.com/",
+            "facebook_url": "",
+            "instagram_url": "https://www.instagram.com/seeinvoid.official/",
+            "youtube_url": "",
+            "tiktok_url": "https://www.tiktok.com/@seeinvoid.official",
+            "twitter_url": "",
             "threads_url": "",
             "linkedin_url": "",
             "bluesky_url": "",
