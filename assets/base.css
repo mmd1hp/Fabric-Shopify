@@ -5298,3 +5298,69 @@ hr,
 }
 
 /* ─────────────────────────────────────────────────────────────────────────── */
+
+/* ─── Price visibility fix ───────────────────────────────────────────────── */
+/* price__hidden is added by price.liquid conditionally but had no CSS rule   */
+.price__hidden {
+  display: none !important;
+}
+
+/* ─── Hero CTA / Shop Now button ─────────────────────────────────────────── */
+.hero__content-wrapper .button--primary,
+.hero__content-wrapper .button--secondary,
+.hero__content-wrapper .link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 32px;
+  border-radius: 4px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background-color: #EDEDED;
+  color: #0B0B0B;
+  border: 1px solid #EDEDED;
+  text-decoration: none;
+  opacity: 1;
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__content-wrapper .button--primary::after,
+.hero__content-wrapper .button--secondary::after,
+.hero__content-wrapper .link::after {
+  content: '\2192'; /* → */
+  display: inline-block;
+  margin-left: 0.5em;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__content-wrapper .button--primary:hover,
+.hero__content-wrapper .button--secondary:hover,
+.hero__content-wrapper .link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  background-color: #888888;
+  color: #0B0B0B;
+  border-color: #888888;
+  opacity: 1;
+}
+
+.hero__content-wrapper .button--primary:hover::after,
+.hero__content-wrapper .button--secondary:hover::after,
+.hero__content-wrapper .link:hover::after {
+  transform: translateX(5px);
+}
+
+/* Center the CTA inside the hero content wrapper */
+.hero__content-wrapper {
+  text-align: center;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────── */
