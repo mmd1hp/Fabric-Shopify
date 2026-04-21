@@ -32,6 +32,34 @@
     {%- render 'theme-styles-variables' -%}
     {%- render 'color-schemes' -%}
 
+    {% # theme-check-disable RemoteAsset %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap">
+    {% # theme-check-enable RemoteAsset %}
+
+    {% style %}
+      :root {
+        /* SEEINVOID brand fonts */
+        --font-body--family: 'Space Grotesk', sans-serif;
+        --font-subheading--family: 'Space Grotesk', sans-serif;
+        --font-heading--family: 'Bebas Neue', sans-serif;
+        --font-accent--family: 'Bebas Neue', sans-serif;
+        /* Override per-preset heading family vars directly */
+        --font-h1--family: 'Bebas Neue', sans-serif;
+        --font-h2--family: 'Bebas Neue', sans-serif;
+        --font-h3--family: 'Bebas Neue', sans-serif;
+        --font-h4--family: 'Space Grotesk', sans-serif;
+        --font-h5--family: 'Space Grotesk', sans-serif;
+        --font-h6--family: 'Space Grotesk', sans-serif;
+        --font-paragraph--family: 'Space Grotesk', sans-serif;
+        /* Wide letter-spacing for headings */
+        --letter-spacing--heading-tight: 0.05em;
+        --letter-spacing--heading-normal: 0.1em;
+        --letter-spacing--heading-loose: 0.15em;
+      }
+    {% endstyle %}
+
     {% if request.design_mode %}
       {%- render 'theme-editor' -%}
     {% endif %}
@@ -125,9 +153,11 @@
       {{ content_for_layout }}
     </main>
 
-    <footer>
-      {% sections 'footer-group' %}
-    </footer>
+    {%- unless template.name == 'index' -%}
+      <footer>
+        {% sections 'footer-group' %}
+      </footer>
+    {%- endunless -%}
 
     {% render 'search-modal' %}
 
