@@ -49,15 +49,9 @@
       viewTransition.types.add(transitionType);
       sessionStorage.setItem('custom-transition-type', transitionType);
     } else {
-      const isFromHomePage = document.querySelector('main[data-template]')?.getAttribute('data-template') === 'index';
       viewTransition.types.clear();
-      if (isFromHomePage) {
-        viewTransition.types.add('entering-void');
-        sessionStorage.setItem('custom-transition-type', 'entering-void');
-      } else {
-        viewTransition.types.add('page-navigation');
-        sessionStorage.removeItem('custom-transition-type');
-      }
+      viewTransition.types.add('page-navigation');
+      sessionStorage.removeItem('custom-transition-type');
     }
   });
 
