@@ -4213,3 +4213,163 @@ product-recommendations:has([data-has-recommendations='false']) {
     translate: 0px var(--atc-destination, 0px);
   }
 }
+
+/* SEEINVOID brand overrides (visual only) */
+
+html,
+body {
+  background: #0b0b0b;
+  color: #ededed;
+}
+
+body,
+.content-for-layout,
+.content-for-layout .paragraph,
+.content-for-layout .paragraph > * {
+  font-family: 'Space Grotesk', Inter, sans-serif;
+  letter-spacing: 0.01em;
+  color: #ededed;
+}
+
+.content-for-layout :is(h1, h2, h3, h4, h5, h6),
+#header-group :is(h1, h2, h3, h4, h5, h6):not(.drawer *),
+footer :is(h1, h2, h3, h4, h5, h6) {
+  font-family: 'Bebas Neue', 'Arial Narrow', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #ededed;
+}
+
+.content-for-layout,
+.content-for-layout .shopify-section,
+.content-for-layout .section,
+.content-for-layout .section-background {
+  background: #0b0b0b;
+}
+
+.shopify-section:not(.header-section):not(:has(.drawer)) .section {
+  padding-block: max(80px, var(--padding-block-start, 0px)) max(80px, var(--padding-block-end, 0px));
+}
+
+.content-for-layout :is(.product-card, .collection-card, .predictive-search-results__card--product, .predictive-search-results__card),
+.content-for-layout .product-grid__item,
+.content-for-layout .featured-blog-posts-card {
+  background: #2d2d2d;
+  border: 1px solid #333;
+  box-shadow: none;
+}
+
+.content-for-layout :is(.product-card:hover, .collection-card:hover, .predictive-search-results__card--product:hover, .predictive-search-results__card:hover) {
+  transform: translateY(-2px);
+  opacity: 0.85;
+  box-shadow: none;
+}
+
+.content-for-layout :is(.product-card img, .collection-card img, .product-media-container img, .card-gallery img) {
+  border-radius: 0;
+}
+
+#header-group,
+#header-group .header,
+#header-group .header-section,
+header-component {
+  background: #0b0b0b;
+  box-shadow: none;
+}
+
+#header-group :is(a, .menu a):not(.drawer *),
+header-component :is(a, .menu a):not(.drawer *) {
+  color: #ededed;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+announcement-bar,
+.announcement-bar {
+  background: #1a1a2e;
+  color: #888;
+}
+
+announcement-bar :is(a, p, span),
+.announcement-bar :is(a, p, span) {
+  color: #888;
+}
+
+.content-for-layout .button,
+.content-for-layout .button-secondary,
+.content-for-layout button.shopify-payment-button__button--unbranded,
+#header-group .button:not(.drawer *),
+footer .button {
+  background: #ededed;
+  color: #0b0b0b;
+  border: 1px solid #ededed;
+  box-shadow: none;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border-radius: 0;
+}
+
+.content-for-layout :is(.button, .button-secondary, button.shopify-payment-button__button--unbranded):hover,
+#header-group .button:hover:not(.drawer *),
+footer .button:hover {
+  background: #888;
+  border-color: #888;
+  color: #0b0b0b;
+  opacity: 0.85;
+}
+
+.content-for-layout .button-secondary,
+footer .button-secondary,
+#header-group .button-secondary:not(.drawer *) {
+  background: transparent;
+  color: #ededed;
+  border: 1px solid #ededed;
+}
+
+.content-for-layout .button-secondary:hover,
+footer .button-secondary:hover,
+#header-group .button-secondary:hover:not(.drawer *) {
+  background: #1a1a2e;
+  border-color: #ededed;
+  color: #ededed;
+  opacity: 0.85;
+}
+
+.content-for-layout .add-to-cart-button {
+  background: #ededed;
+  color: #0b0b0b;
+  border: 1px solid #ededed;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.content-for-layout .add-to-cart-button:hover {
+  background: #888;
+  border-color: #888;
+  color: #0b0b0b;
+  opacity: 0.85;
+}
+
+.content-for-layout :is(hr, .divider, .border-style, .product-grid__item, .section-resource-list, .section-carousel) {
+  border-color: #2d2d2d;
+}
+
+.content-for-layout :is(p, small, .caption, .text-subdued, .cart-secondary-typography),
+footer :is(p, small, .caption, .text-subdued) {
+  color: #888;
+}
+
+.content-for-layout :is(a:hover, button:hover),
+footer :is(a:hover, button:hover),
+#header-group :is(a:hover, button:hover):not(.drawer *) {
+  opacity: 0.85;
+}
+
+footer,
+.footer {
+  background: #0b0b0b;
+  color: #888;
+  border-top: 1px solid #2d2d2d;
+  box-shadow: none;
+}
