@@ -3443,88 +3443,13 @@ label:has(input[type='checkbox']:disabled) {
   overflow: visible;
 }
 
-/* ── Responsive Cart Table ── */
-.cart-items__table {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: auto;
-}
-
-.cart-items__table thead {
-  display: none;
-}
-
-.cart-items__table tbody {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
+/* ── Cart table: let theme CSS handle layout; only override visual styles ── */
 .cart-items__table-row {
-  display: grid !important;
-  grid-template-columns: 80px minmax(0, 1fr) auto;
-  grid-template-areas:
-    "media details price"
-    "media quantity price";
-  width: 100%;
-  border-bottom: 1px solid #2D2D2D !important;
-  padding: 12px 0;
-  gap: 0.5rem;
-  align-items: start;
-  height: auto;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .cart-items__table-row:last-child {
   border-bottom: none;
-}
-
-.cart-items__table-row > td {
-  padding: 0;
-  vertical-align: top;
-  text-align: left;
-  min-width: 0;
-}
-
-/* ── Cart Media Cell (Image) ── */
-.cart-items__media {
-  grid-area: media;
-  width: 80px;
-  height: 80px;
-  overflow: visible;
-}
-
-.cart-items__media img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: contain;
-}
-
-/* ── Cart Details Cell ── */
-.cart-items__details {
-  grid-area: details;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  min-width: 0;
-  align-self: start;
-}
-
-.cart-items__details * {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-/* ── Cart Quantity Cell ── */
-.cart-items__quantity {
-  grid-area: quantity;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  width: fit-content;
-  white-space: nowrap;
-  align-self: center;
 }
 
 /* ── Cart Price Cell ── */
