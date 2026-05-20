@@ -409,12 +409,52 @@
                   "block_order": [
                     "text_hYWKPd"
                   ]
+                },
+                "accordion_row_b3V76K": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Return & Policy",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_UU8A8Q": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p><a href=\"/pages/size-chart\" target=\"_blank\" title=\"Size Guide\">Size Guide</a></p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-primary--family)",
+                        "font_size": "",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_UU8A8Q"
+                  ]
                 }
               },
               "block_order": [
                 "accordion_row_TbgNUF",
                 "accordion_row_XMFatY",
-                "accordion_row_kmdwc8"
+                "accordion_row_kmdwc8",
+                "accordion_row_b3V76K"
               ]
             }
           },
