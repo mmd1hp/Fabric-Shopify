@@ -422,7 +422,7 @@
                     "text_UU8A8Q": {
                       "type": "text",
                       "settings": {
-                        "text": "<p><a href=\"/pages/size-chart\" target=\"_blank\" title=\"Size Guide\">Size Guide</a></p>",
+                        "text": "",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
