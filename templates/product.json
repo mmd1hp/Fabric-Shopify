@@ -383,7 +383,7 @@
                     "text_hYWKPd": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Our products are crafted to fit true to size, ensuring that you can confidently select your usual size with ease. Whether you’re looking for a relaxed or tailored fit, our designs are made to complement your unique shape and style.</p>",
+                        "text": "<p><a href=\"/pages/size-chart\" target=\"_blank\" title=\"Size Guide\">Size Guide</a></p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
