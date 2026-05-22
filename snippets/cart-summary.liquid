@@ -5,6 +5,15 @@
   @param {string} [section_id] - The section ID for cart discount component.
 {%- enddoc -%}
 
+{% comment %}
+  ============================================================
+  ORDER LIMIT — Cart page / drawer enforcement
+  To change the limit, edit the number next to order_limit below.
+  Also update the matching number in sections/product-information.liquid.
+  ============================================================
+{% endcomment %}
+{% assign order_limit = 2 %}
+
 <div class="cart-totals">
   {% # We need to keep this node in place to allow morphing to work properly # %}
   <div class="cart-totals__original-container cart-primary-typography">
@@ -257,13 +266,22 @@
   </div>
 </div>
 
+<p
+  id="order-limit-cart-warning"
+  data-limit="{{ order_limit }}"
+  role="alert"
+  style="color:#c0392b;font-weight:600;font-size:0.875rem;margin:0 0 1rem;padding:0.75rem 1rem;background:#fdf0f0;border-left:3px solid #c0392b;border-radius:3px;{% if cart.item_count <= order_limit %}display:none;{% endif %}"
+>
+  Maximum order limit is {{ order_limit }} units per customer.
+</p>
+
 <div class="cart__ctas">
   <button
     type="submit"
     id="checkout"
     class="cart__checkout-button button"
     name="checkout"
-    {% if cart == empty %}
+    {% if cart == empty or cart.item_count > order_limit %}
       disabled
     {% endif %}
     form="cart-form"
@@ -284,6 +302,33 @@
     </div>
   {% endif %}
 </div>
+
+<script>
+(function () {
+  function check() {
+    var warningEl = document.getElementById('order-limit-cart-warning');
+    if (!warningEl) return;
+    var ORDER_LIMIT = parseInt(warningEl.dataset.limit, 10) || 2;
+
+    fetch('/cart.js', { credentials: 'same-origin' })
+      .then(function (r) { return r.json(); })
+      .then(function (cart) {
+        var over = cart.item_count > ORDER_LIMIT;
+        warningEl.style.display = over ? '' : 'none';
+        var checkoutBtn = document.getElementById('checkout');
+        if (checkoutBtn) checkoutBtn.disabled = over;
+      });
+  }
+
+  document.addEventListener('cart:update', check);
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', check);
+  } else {
+    check();
+  }
+})();
+</script>
 
 {% stylesheet %}
   .cart-actions {
