@@ -299,6 +299,7 @@
                     "heading": "Product Details",
                     "open_by_default": false,
                     "icon": "none",
+                    "image_upload": "shopify://shop_images/Alien_Layers-clean-white-noBG.png",
                     "width": 20
                   },
                   "blocks": {
@@ -338,6 +339,7 @@
                     "heading": "Care & Maintenance",
                     "open_by_default": false,
                     "icon": "none",
+                    "image_upload": "shopify://shop_images/clean_2.png",
                     "width": 20
                   },
                   "blocks": {
@@ -377,13 +379,14 @@
                     "heading": "Size & Fit",
                     "open_by_default": false,
                     "icon": "none",
+                    "image_upload": "shopify://shop_images/measurement.png",
                     "width": 20
                   },
                   "blocks": {
                     "text_hYWKPd": {
                       "type": "text",
                       "settings": {
-                        "text": "<p><a href=\"/pages/size-chart\" target=\"_blank\" title=\"Size Guide\">Size Guide</a></p>",
+                        "text": "",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -404,18 +407,43 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {}
+                    },
+                    "image_h7jFgL": {
+                      "type": "image",
+                      "name": "t:names.image",
+                      "settings": {
+                        "image": "shopify://shop_images/b.png",
+                        "link": "",
+                        "image_ratio": "adapt",
+                        "width": "fill",
+                        "custom_width": 100,
+                        "width_mobile": "fill",
+                        "custom_width_mobile": 100,
+                        "height": "fit",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
                     }
                   },
                   "block_order": [
-                    "text_hYWKPd"
+                    "text_hYWKPd",
+                    "image_h7jFgL"
                   ]
                 },
                 "accordion_row_b3V76K": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "Return & Policy",
+                    "heading": "Return & Exchange Policy",
                     "open_by_default": false,
                     "icon": "none",
+                    "image_upload": "shopify://shop_images/policy_1.png",
                     "width": 20
                   },
                   "blocks": {
