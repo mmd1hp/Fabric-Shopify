@@ -440,10 +440,10 @@
                 "accordion_row_WjPKka": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "Size & Fit",
+                    "heading": "Return & Exchange Policy",
                     "open_by_default": false,
                     "icon": "none",
-                    "image_upload": "shopify://shop_images/measurement.png",
+                    "image_upload": "shopify://shop_images/policy_1.png",
                     "width": 20
                   },
                   "blocks": {
