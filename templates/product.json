@@ -376,7 +376,7 @@
                 "accordion_row_kmdwc8": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "Size & Fit",
+                    "heading": "Size Chart",
                     "open_by_default": false,
                     "icon": "none",
                     "image_upload": "shopify://shop_images/measurement.png",
