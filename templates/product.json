@@ -262,11 +262,37 @@
               },
               "blocks": {}
             },
+            "text_bhRrYV": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h3>Model Info</h3><ul><li>Model is 175 cm / 80 kg, Wearing size L</li></ul>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "text_XWpW7c": {
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>Exchange Within 14 Days</p>",
+                "text": "<p>Returns Within 14 Days</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -584,6 +610,7 @@
             "group_8fkkWP",
             "text_AWUaDT",
             "variant_picker_3Nha6V",
+            "text_bhRrYV",
             "text_XWpW7c",
             "buy_buttons_NmYpFG",
             "accordion_iWQwkW"
