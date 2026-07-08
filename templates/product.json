@@ -304,7 +304,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Shipping & returns</h3><ul><li>Delivery within 3  to 5 days</li><li>Returns Within 14 Days</li></ul>",
+                "text": "<h3>SHIPPING & RETURNS</h3><ul><li>Delivery within 3  to 5 days</li><li>Returns Within 14 Days</li></ul>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
