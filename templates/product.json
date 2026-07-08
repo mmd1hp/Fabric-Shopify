@@ -262,58 +262,6 @@
               },
               "blocks": {}
             },
-            "text_bhRrYV": {
-              "type": "text",
-              "name": "t:names.text",
-              "settings": {
-                "text": "<h3>Model Info</h3><ul><li>Model is 175 cm / 80 kg, Wearing size L</li></ul>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_XWpW7c": {
-              "type": "text",
-              "name": "t:names.text",
-              "settings": {
-                "text": "<p>Returns Within 14 Days</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
             "buy_buttons_NmYpFG": {
               "type": "buy-buttons",
               "name": "t:names.product_buy_buttons",
@@ -351,6 +299,58 @@
                 }
               },
               "block_order": []
+            },
+            "text_XWpW7c": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h3>Shipping & returns</h3><ul><li>Delivery within 3  to 5 days</li><li>Returns Within 14 Days</li></ul>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": true,
+                "background_color": "#313131",
+                "corner_radius": 2,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_bhRrYV": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h3>Model Info</h3><ul><li>Model is 175 cm / 80 kg, Wearing size L</li></ul>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": true,
+                "background_color": "#313131",
+                "corner_radius": 2,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
             },
             "accordion_iWQwkW": {
               "type": "accordion",
@@ -610,9 +610,9 @@
             "group_8fkkWP",
             "text_AWUaDT",
             "variant_picker_3Nha6V",
-            "text_bhRrYV",
-            "text_XWpW7c",
             "buy_buttons_NmYpFG",
+            "text_XWpW7c",
+            "text_bhRrYV",
             "accordion_iWQwkW"
           ]
         }
