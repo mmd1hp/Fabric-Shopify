@@ -330,7 +330,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Model Info</h3><ul><li>Model is 175 cm / 80 kg, Wearing size L</li></ul>",
+                "text": "<h3>Model Info</h3><ul><li>Model is 175 cm / 80 kg, Wearing size XL</li></ul>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
