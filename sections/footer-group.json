@@ -123,7 +123,6 @@
         "menu_f9RViT": {
           "type": "menu",
           "name": "t:names.menu",
-          "disabled": true,
           "settings": {
             "menu": "",
             "heading": "About us",
@@ -145,7 +144,6 @@
         "menu_LhkDcq": {
           "type": "menu",
           "name": "t:names.menu",
-          "disabled": true,
           "settings": {
             "menu": "",
             "heading": "Connect",
