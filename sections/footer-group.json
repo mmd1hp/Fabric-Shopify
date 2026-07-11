@@ -82,7 +82,7 @@
           "name": "t:names.menu",
           "settings": {
             "menu": "home",
-            "heading": "Home",
+            "heading": "About",
             "menu_spacing": 8,
             "show_as_accordion": false,
             "accordion_icon": "caret",
