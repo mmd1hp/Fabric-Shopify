@@ -100,6 +100,20 @@
         "padding-block-end": 48
       }
     },
+    "divider_WDCL3k": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "carousel_awKwrF": {
       "type": "carousel",
       "blocks": {
@@ -835,21 +849,6 @@
         "padding-block-end": 0
       }
     },
-    "divider_WDCL3k": {
-      "type": "divider",
-      "disabled": true,
-      "name": "t:names.divider_section",
-      "settings": {
-        "color_scheme": "",
-        "section_width": "full-width",
-        "thickness": 1,
-        "corner_radius": "square",
-        "width_percent": 100,
-        "alignment_horizontal": "center",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
     "product_list_4jqyPz": {
       "type": "product-list",
       "blocks": {
@@ -1096,7 +1095,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "link": "",
+            "link": "shopify://products/worn-signal-jorts-001",
             "video_loop": true,
             "video_autoplay": false,
             "image_position": "cover",
@@ -1215,7 +1214,6 @@
           ]
         }
       },
-      "disabled": true,
       "name": "Editorial",
       "settings": {
         "media_position": "right",
@@ -1231,11 +1229,11 @@
   },
   "order": [
     "hero_rhMed7",
+    "divider_WDCL3k",
     "carousel_awKwrF",
     "collection_list_mcURmi",
     "marquee_izzYrQ",
     "section_8zY7P4",
-    "divider_WDCL3k",
     "product_list_4jqyPz",
     "media_with_content_aF6TTD"
   ]
