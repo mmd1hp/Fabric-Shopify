@@ -1,6 +1,79 @@
+{% doc %}
+  @prompt
+    Add an image block type to the existing Marquee section that allows merchants to upload a PNG/image and display it inline alongside the scrolling text items. The image block should have an image picker setting, an optional width/size setting, and render the image seamlessly within the marquee scroll loop, matching the same spacing and alignment as the text blocks.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-marquee-image-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .ai-marquee-image-{{ ai_gen_id }} img {
+    display: block;
+    height: {{ block.settings.image_height }}px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .ai-marquee-image-placeholder-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: {{ block.settings.image_height }}px;
+    width: {{ block.settings.image_height }}px;
+    background-color: #2d2d2d;
+    border-radius: 2px;
+  }
+
+  .ai-marquee-image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+{% endstyle %}
+
+<div class="ai-marquee-image-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% if block.settings.image %}
+    <img
+      src="{{ block.settings.image | image_url: height: block.settings.image_height }}"
+      alt="{{ block.settings.image.alt | escape }}"
+      loading="lazy"
+      height="{{ block.settings.image_height }}"
+    >
+  {% else %}
+    <div class="ai-marquee-image-placeholder-{{ ai_gen_id }}">
+      {{ 'image' | placeholder_svg_tag }}
+    </div>
+  {% endif %}
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Marquee image",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "image_height",
+      "label": "Image height",
+      "min": 20,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "default": 60
+    }
+  ],
+  "presets": [
+    {
+      "name": "Marquee image"
+    }
+  ]
+}
 {% endschema %}
