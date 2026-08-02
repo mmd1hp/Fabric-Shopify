@@ -666,7 +666,7 @@
         "text_WDkNgd": {
           "type": "text",
           "settings": {
-            "text": "<p>STILL. AWARE. ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>",
+            "text": "<p>STILL. AWARE. ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  ‎ ‎ X﹏X ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  ‎ ‎ </p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "center",
@@ -679,7 +679,7 @@
             "wrap": "nowrap",
             "color": "var(--color-foreground)",
             "background": false,
-            "background_color": "#9E474726",
+            "background_color": "#9e474726",
             "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
