@@ -45,7 +45,7 @@
     "type_letter_spacing_h6": "heading-loose",
     "type_case_h6": "uppercase",
     "page_width": "wide",
-    "card_hover_effect": "subtle-zoom",
+    "card_hover_effect": "scale",
     "badge_position": "top-left",
     "badge_corner_radius": 2,
     "badge_sale_color_scheme": "scheme-1",
@@ -74,26 +74,9 @@
     "variant_swatch_height": 25,
     "variant_swatch_radius": 100,
     "variant_button_border_width": 1,
-    "variant_button_radius": 2,
-    "variant_button_width": "equal-width-buttons",
+    "variant_button_radius": 13,
+    "variant_button_width": "default-width-buttons",
     "content_for_index": [],
-    "blocks": {
-      "17754088914158789468": {
-        "type": "shopify://apps/easysell-cod-form/blocks/app-embed/7bfd0a95-6839-4f02-b2ee-896832dbe67e",
-        "disabled": true,
-        "settings": {}
-      },
-      "7147999719060634790": {
-        "type": "shopify://apps/gsc-countdown-timer/blocks/countdown-bar/58dc5b1b-43d2-4209-b1f3-52aff31643ed",
-        "disabled": false,
-        "settings": {}
-      },
-      "6610233760104865948": {
-        "type": "shopify://apps/brevo-pushowl/blocks/pushowl-app-embed-3d2ff2b5/fa20c3ba-38bf-43e0-ba5c-431f6ae07d95",
-        "disabled": false,
-        "settings": {}
-      }
-    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
