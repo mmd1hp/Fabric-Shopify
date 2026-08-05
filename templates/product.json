@@ -182,14 +182,14 @@
                         "show_installments": false,
                         "show_tax_info": false,
                         "type_preset": "h6",
-                        "width": "fit-content",
+                        "width": "100%",
                         "alignment": "left",
                         "font": "var(--font-body--family)",
                         "font_size": "1rem",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
-                        "color": "var(--color-foreground)",
+                        "color": "var(--color-foreground-heading)",
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
@@ -197,23 +197,36 @@
                       },
                       "blocks": {}
                     },
-                    "review_MbGGDq": {
-                      "type": "review",
-                      "name": "t:names.product_review_stars",
+                    "text_UaXwzn": {
+                      "type": "text",
+                      "name": "t:names.text",
                       "settings": {
-                        "stars_style": "single",
-                        "show_number": false,
-                        "rating_color": "foreground",
+                        "text": "<h6>+ Free Shipping</h6>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
                         "type_preset": "h6",
-                        "width": "100%",
-                        "alignment": "left"
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
                   },
                   "block_order": [
                     "price_UN6aHJ",
-                    "review_MbGGDq"
+                    "text_UaXwzn"
                   ]
                 }
               },
@@ -226,7 +239,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>+ Free Shipping</p>",
+                "text": "",
                 "width": "fit-content",
                 "max_width": "narrow",
                 "alignment": "left",
