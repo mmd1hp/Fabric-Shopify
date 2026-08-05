@@ -113,9 +113,9 @@
                   "name": "t:names.title",
                   "settings": {
                     "text": "<h1>{{ closest.product.title }}</h1>",
-                    "width": "fit-content",
+                    "width": "100%",
                     "max_width": "normal",
-                    "alignment": "left",
+                    "alignment": "center",
                     "type_preset": "h2",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
@@ -145,7 +145,7 @@
                     "align_baseline": false,
                     "horizontal_alignment_flex_direction_column": "flex-start",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 16,
+                    "gap": 6,
                     "width": "fill",
                     "custom_width": 100,
                     "width_mobile": "fill",
@@ -181,9 +181,9 @@
                         "show_sale_price_first": true,
                         "show_installments": false,
                         "show_tax_info": false,
-                        "type_preset": "h6",
+                        "type_preset": "h5",
                         "width": "100%",
-                        "alignment": "left",
+                        "alignment": "right",
                         "font": "var(--font-body--family)",
                         "font_size": "1rem",
                         "line_height": "normal",
@@ -268,8 +268,8 @@
                 "variant_style": "buttons",
                 "show_swatches": true,
                 "alignment": "center",
-                "padding-block-start": 16,
-                "padding-block-end": 16,
+                "padding-block-start": 10,
+                "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
@@ -290,7 +290,6 @@
               "blocks": {
                 "quantity": {
                   "type": "quantity",
-                  "disabled": true,
                   "static": true,
                   "settings": {},
                   "blocks": {}
